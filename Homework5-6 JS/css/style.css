@@ -1,0 +1,44 @@
+.wrapper{
+	font-family:sans-serif;
+	margin:0 auto;
+	width:60%;
+	font-size:48px;
+	position:relative;
+}
+
+input{
+	width:48%;
+	font-size:48px;
+	color: white;
+	padding:20px;
+	text-transform:uppercase;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+#stopwatch{
+	border: 2px black solid;
+	text-align:center;
+	margin-bottom:10px;
+	box-shadow: 2px 2px 2px green;
+}
+
+#start{
+	background: rgb(66, 184, 221);
+	position: absolute;
+	left:0;
+	color: white;
+}
+
+#stop{
+	background: rgb(202, 60, 60);
+	position: absolute;
+	right:0;
+}
+
+#pause{
+	background: rgb(223, 117, 20);
+	position: absolute;
+	left:0;
+	display:none;
+}

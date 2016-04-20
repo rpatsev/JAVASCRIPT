@@ -1,0 +1,97 @@
+				/*form*/
+
+.wrapper{
+	padding-top:10px;
+	font-family:sans-serif;
+	margin: 0 auto;
+	width: 50%;
+
+}
+
+fieldset{
+	border: 2px solid gray;
+	padding: 20px;
+	position:relative;
+	
+}
+
+dl{
+	padding: 10px 50px 0 0;
+	clear:both;
+}
+
+dt{
+	float:left;
+
+}
+
+dd{
+	padding-left: 100px;
+}
+
+span{
+	
+}
+
+.assist_hidden{
+	display:none;
+	float: right;
+    box-shadow: 0 0 2px black;
+    padding: 5px;
+    width: 55%;
+    font-size: 12px;
+}
+
+.assist_hidden--show{
+	display:block;
+	float: right;
+    box-shadow: 0 0 2px black;
+    padding: 5px;
+    width: 55%;
+    font-size: 12px;
+}
+
+
+				/*tabs*/
+.tabs{
+	margin-top:20px;
+	border: 2px solid gray;
+	padding:10px;
+}
+				
+.tabs ul{
+	overflow:hidden;
+	background: linear-gradient(#b3dced 0%,#29b8e5 50%,#bce0ee 100%);
+}
+
+a{
+	color:black;
+	text-decoration:none;
+}
+				
+.tabs ul li{
+    float: left;
+    padding: 10px;
+    border: 1px solid gray;
+    border-bottom: none;
+    border-radius: 15% 15% 0 0;
+	text-shadow: 1px 1px 1px gray;
+	background: linear-gradient(to bottom, #feccb1 0%,#f17432 50%,#ea5507 51%,#fb955e 100%);
+}
+
+.tabs ul li:hover{
+	background: linear-gradient(to bottom, #feccb1 0%,#f17432 5%,#ea5507 93%,#fb955e 100%);
+}
+
+.tabs__area{
+	border: 1px solid gray;
+	padding:5px;
+}
+
+.tabs__area--show{
+	display:block;
+}
+
+.tabs__area--hide{
+	display:none;
+}
