@@ -12,7 +12,6 @@ fieldset{
 	border: 2px solid gray;
 	padding: 20px;
 	position:relative;
-	
 }
 
 dl{
@@ -22,16 +21,12 @@ dl{
 
 dt{
 	float:left;
-
 }
 
 dd{
 	padding-left: 100px;
 }
 
-span{
-	
-}
 
 .assist_hidden{
 	display:none;
@@ -53,23 +48,20 @@ span{
 
 
 				/*tabs*/
-.tabs{
+.tabs__menu{
 	margin-top:20px;
 	border: 2px solid gray;
-	padding:10px;
-}
-				
-.tabs ul{
+    padding-top: 10px;
 	overflow:hidden;
 	background: linear-gradient(#b3dced 0%,#29b8e5 50%,#bce0ee 100%);
-}
+}	
 
 a{
 	color:black;
 	text-decoration:none;
 }
 				
-.tabs ul li{
+.tabs__menu li{
     float: left;
     padding: 10px;
     border: 1px solid gray;
@@ -79,7 +71,12 @@ a{
 	background: linear-gradient(to bottom, #feccb1 0%,#f17432 50%,#ea5507 51%,#fb955e 100%);
 }
 
-.tabs ul li:hover{
+.tabs__menu li:hover{
+	background: linear-gradient(to bottom, #feccb1 0%,#f17432 5%,#ea5507 93%,#fb955e 100%);
+	cursor:pointer;
+}
+
+#selected{
 	background: linear-gradient(to bottom, #feccb1 0%,#f17432 5%,#ea5507 93%,#fb955e 100%);
 }
 
@@ -88,10 +85,6 @@ a{
 	padding:5px;
 }
 
-.tabs__area--show{
-	display:block;
-}
-
-.tabs__area--hide{
+.tabs__area li{
 	display:none;
 }

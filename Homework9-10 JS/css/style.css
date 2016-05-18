@@ -1,0 +1,95 @@
+a{
+	text-decoration: none;
+    text-shadow: 1px 1px 1px black;
+    font-weight: 600;
+    color: white;
+}
+
+
+
+				/*form*/
+
+.wrapper{
+	font-family:sans-serif;
+
+}
+
+.mycarousel{
+	width:800px;
+	height:500px;
+	position:relative;
+	overflow:hidden;
+	border:3px solid green;
+	border-radius:2px;
+	margin-top:10px;
+	margin: 0 auto;
+}
+
+.mycarousel ul{
+	width:20000em;
+	position:relative;
+
+}
+
+.mycarousel li {
+	float:left;
+
+}
+
+
+.mycarousel img{
+	width:800px;
+}
+
+.mycarousel__button--left{
+	float:left;
+	background:url(../img/arrowleft.png);
+}
+
+.mycarousel__button--right{
+	background:url(../img/arrowright.png);
+	float:right;
+}
+
+.select{
+	margin:0 auto;
+	width:800px;
+
+}
+
+.select ul{
+	clear:both;
+	height:50px;
+}
+
+.select a{
+	width:30px;
+	height:40px;
+}
+
+
+					/* navigation */
+					
+nav{
+	margin: 0 auto;
+    width: 60%;
+    background: rgba(46, 126, 152, 0.5);
+    padding: 10px;
+	height:25px;
+}
+
+nav ul li{
+	float:left;
+	padding:10px;
+	position:relative;
+}
+
+.submenu{
+	display:none;
+	
+}
+
+nav a:hover{
+	color:rgb(50,50,50);
+	text-shadow: 1px 1px 1px white;
+}

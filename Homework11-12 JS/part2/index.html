@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang = "en">
+<meta charset = "UTF-8">
+	<head>
+		<title>Pattern</title>
+		<link rel = "stylesheet" href = "css/reset.css">
+		<link rel = "stylesheet" href = "css/style.css">
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+		<script type="text/javascript" src = "js/tmpl.js"></script>
+		<script type="text/javascript" src = "js/script.js"></script>
+	</head>
+	<body>
+	<script type = "text/template" id = "myPage">
+		<div class = "wrapper">			
+			<div class="name">
+				<h1><%= data[0].name %></h1>
+				<img src = "<%= data[0].img %>" alt = "Здесь должно быть мое фото">
+			</div>
+			<div class="box">
+				<p><%= data[0].college %></p>
+			</div>
+			<div class="box">
+				<p>Хочу учить фронтенд, потому что:</p>
+				<ul>
+					<% for (var i=0; i < data[1].benefit.length; i++ ) { %>
+						<li><%= data[1].benefit[i] %></li>
+					<% }; %>
+				</ul>
+			</div>
+			<div class="box">
+				<p>Мои контактные телефоны</p>
+					<% for (var i=0; i < data[2].phonenumber.length; i++ ) { %>
+						<ul>
+							<li><%= data[2].phonenumber[i] %></li>
+						</ul>
+					<% }; %>
+			</div>
+			<div class="box">
+				<p>Мой профиль вконтакте</p>
+				<p> <a target = "_blank" href ="<%= data[3].sociallink %>" title = "<%= data[3].network%>"><%= data[3].network%></a> </p>
+			</div>
+			<div class="box">
+				<p>Мой фидбек:</p>
+				<p><%= data[4].skill %></p>
+			</div>
+		</div>
+	</script>
+	</body>
+</html>
