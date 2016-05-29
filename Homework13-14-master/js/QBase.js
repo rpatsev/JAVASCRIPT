@@ -1,6 +1,7 @@
-	'use strict';
-	
-var QBase = {
+'use strict'
+
+var QBase= {
+	title: 'Какой то тест',
 	question: [
 		{
 			q:"Право использования коммерческого наименования 'JavaScript' принадлежит компании:",
@@ -32,4 +33,6 @@ var QBase = {
 			]
 		}
 	]
-}
+};
+
+

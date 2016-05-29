@@ -1,0 +1,94 @@
+				/*form*/
+
+.wrapper{
+	font-family:sans-serif;
+	margin: 0 100px;
+	margin-bottom:200px;
+	
+}
+
+.jcarousel{
+	width:800px;
+	height:500px;
+	position:relative;
+	overflow:hidden;
+	border:3px solid green;
+	border-radius:2px;
+	margin: 0 auto;
+}
+
+.jcarousel ul{
+	width:20000em;
+	position:relative;
+
+}
+
+.jcarousel li {
+	float:left;
+}
+
+.jcarousel img{
+	width:800px;
+}
+
+.jcarousel__button--left{
+	float:left;
+	left:5%;
+	background:url(../img/arrowleft.png);
+}
+
+.jcarousel__button--right{
+	background:url(../img/arrowright.png);
+	right:5%;
+	float:right;
+}
+
+
+a{
+	position:absolute;
+    top: 45%;
+	width:30px;
+	height:40px;
+	opacity:0.2;
+}
+
+a:hover{
+	opacity:1;
+	transition:0.5s;
+}
+
+.select{
+	margin-left:15%;
+}
+
+				/*checkbox*/
+				
+.checkbox{
+    margin-right: 15%;
+}
+
+.checkbox div{
+	float: right;
+	clear: both;
+}
+
+.niceCheck{
+	width:17px;
+	height:17px;
+	display:inline-block;
+	cursor:pointer;
+	background: url(../img/checkboxSprite.png);
+	overflow:hidden;
+	margin: 5px 0 0 5px;
+	
+}
+
+.niceChecked{
+	background-position: 0 -17px;
+}
+
+
+ .niceCheck input,
+ .checkbox input{
+	display:none;
+}

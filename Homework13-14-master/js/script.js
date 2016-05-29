@@ -1,27 +1,25 @@
-// 'use strict';
-
+'use strict'
 
 $(function(){
-	var html = $('#myQuiz').html();
-	var result;
-	
-	var content = tmpl(html,{
-		QBase: QBase,
-		result: result
-	});
+	var tmpl =  $('#myQuiz').html();
+    tmpl = _.template(tmpl);
+
+    var content = tmpl({
+      QBase: QBase,
+	  result: result
+    });
 	
 	$('body').append(content);
 	
-
-	
+		
 	localStorage.setItem('Database',JSON.stringify(QBase));
 
 	var Data = localStorage.getItem('Database');
 
 	Data = JSON.parse(Data);
-
-	 for(var i=0; i<QBase.question.length;i++){
-		$('.optionBox'+i).addClass('inactive'+i);
+	
+	for(var i=0; i<QBase.question.length;i++){
+		$('.check'+i).addClass('inactive'+i);
 		$('.inactive0').on('click',function(){
 			if(this.checked){
 				$(this).removeClass('inactive0');
@@ -53,46 +51,49 @@ $(function(){
 				$(this).addClass('inactive0');
 				$('.inactive2').removeAttr('disabled','disabled');
 			}
-		});
-		}
+			});
+		};
 
-		
-	function Result(){
-		var result;
-		var $check = $('.quizBlock input:checked');
-		for(a = 0;a < $check.length;a++){
-			var str = $check.eq(a).attr('id');
+	
+	$('button').on('click', myResult);
+	var result;
+	
+	function myResult(){
+		var $chBox = $('input:checked');
+		for(var k=0; k< $chBox.length; k++) {
+			var str = $chBox.eq(k).attr('id');
 			str = str.substr(str.indexOf('_')+1);
 			var i = +str.substr(0,str.indexOf('_'));
 			var j = +str.substr(str.indexOf('_')+1);
 			if (QBase.question[i].a[j].flag){
-				result = 'Answer' + ' ' + (j+1) + ' ' + 'on question' + ' ' + (i+1) + ' ' + '<span>' + 'true' + '</span>' + '<br></br>';
+				result = 'Ответ  №' + ' ' + (j+1) + ' ' + 'на вопрос №' + ' ' + (i+1) + ' '  + 'верный' + '<br></br>';
 				$('p').append(result);
 			} else {
-				result = 'Answer' + ' ' + (j+1) + ' ' + 'on question' + ' ' + (i+1) + ' ' + '<span>' + 'false' + '</span>' + '<br></br>';
+				result = 'Ответ  №' + ' ' + (j+1) + ' ' + 'на вопрос №' + ' ' + (i+1) + ' ' + 'неверный' + '<br></br>';
 				$('p').append(result);
 			}
 		}
-		var optionBox = $('.quizBlock input');
-		for (var i=0; i<optionBox.length; i++){
-			if (optionBox[i].type == 'checkbox'){
-				optionBox[i].checked = false;
+		var checkboxes = $('input');
+		for (var i=0; i<checkboxes.length; i++){
+			if (checkboxes[i].type == 'checkbox'){
+				checkboxes[i].checked = false;
 		  }
-		  $('.optionBox0').addClass('inactive0').removeAttr('disabled');
-		  $('.optionBox1').addClass('inactive1').removeAttr('disabled');
-		  $('.optionBox2').addClass('inactive2').removeAttr('disabled');
+		  $('.check0').addClass('inactive0').removeAttr('disabled');
+		  $('.check1').addClass('inactive1').removeAttr('disabled');
+		  $('.check2').addClass('inactive2').removeAttr('disabled');
 		}
 	}
-	
-		
- 	$('#check-results').on('click', function(e){
-		e.preventDefault;
+});
+
+$(function() { 
+	$('button').on('click',function(e){ 
+		e.preventDefault(); 
 		$('#overlay').fadeIn(400,function(){ 
-		$('#modal_form').css('display', 'block') 
+				$('#modal_form').css('display', 'block') 
 								.animate({
 									opacity: 1,
 									top: '30%'
-								}, 200);
+								}, 200); 
 		});
 	});
 
@@ -107,5 +108,4 @@ $(function(){
 		);
 		$('p').empty();
 	});
-});	
-	
+});

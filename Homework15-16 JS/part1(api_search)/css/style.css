@@ -1,0 +1,28 @@
+.wrapper{
+	text-align:center;
+}
+
+.logo{
+	padding-top: 150px;
+}
+
+.logo img{
+	width:300px;
+
+}
+
+#searchfield{
+	width:250px;
+	height:25px;
+}
+
+button{
+    height: 30px;
+    width: 50px;
+}
+
+button span{
+	content: "\f002";
+	font-family: FontAwesome;
+	color: #aaaaaa;
+}

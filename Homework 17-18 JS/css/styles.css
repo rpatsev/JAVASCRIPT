@@ -1,0 +1,212 @@
+@CHARSET "UTF-8";
+
+.jquery-selectbox {
+	position: relative;
+	height: 20px;
+	border: 1px solid #d2ad63;
+    width: 160px;
+	z-index: 0;
+	float: left;
+	display: inline;
+	margin: 4px 4px 4px 0;
+	font-size: 14px;
+	font-family: Tahoma, Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #444;
+	padding: 0;
+	background-image: url("../img/bg-TextField.gif");
+}
+.jquery-selectbox.selecthover {
+	border-color: #9F7627;
+	background-color: #FFFCDF;
+	background-image: url("../img/bg-TextFieldFocused.gif");
+	z-index: 700;
+}	
+.jquery-selectbox .jquery-selectbox-currentItem {
+	padding: 3px 0px 0px 3px;
+	white-space: nowrap;
+	display: block;
+	overflow: hidden;
+}
+
+.jquery-selectbox .jquery-selectbox-list {
+	display: none;
+	position: absolute;
+	top: 20px;
+	padding: 2px;
+	left: 0px;
+	background: #fffcdf;
+	width: 160px;
+	height: 120px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	z-index: 1000;
+	border: 1px solid #d2ad63;
+}
+.jquery-selectbox .jquery-selectbox-moreButton {
+	/*
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	*/
+	float: right;
+	background: url("../img/lay-selectMoreButton.gif");
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+.jquery-selectbox .jquery-selectbox-moreButton.morebuttonhover {
+	background: url("../img/lay-selectMoreButtonHover.gif");
+}
+
+.jquery-selectbox .jquery-selectbox-item.listelementhover {
+	background: #87683d;
+	color: #eee;
+}
+.jquery-selectbox .jquery-selectbox-item {
+	display: block;
+	cursor: default;
+}
+
+/** ERROR classes **/
+form .error .jquery-selectbox {
+	color: #d00;
+	border-color: #d00;
+	background-image: url("../img/bg-TextFieldError.gif") contain;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*form*/
+
+.wrapper{
+	font-family:sans-serif;
+	margin: 0 100px;
+	margin-bottom:200px;
+	
+}
+
+.jcarousel{
+	width:800px;
+	height:500px;
+	position:relative;
+	overflow:hidden;
+	border:3px solid green;
+	border-radius:2px;
+	margin: 0 auto;
+}
+
+.jcarousel ul{
+	width:20000em;
+	position:relative;
+
+}
+
+.jcarousel li {
+	float:left;
+}
+
+.jcarousel img{
+	width:800px;
+}
+
+.jcarousel__button--left{
+	float:left;
+	left:5%;
+	background:url(../img/arrowleft.png);
+}
+
+.jcarousel__button--right{
+	background:url(../img/arrowright.png);
+	right:5%;
+	float:right;
+}
+
+
+a{
+	position:absolute;
+    top: 45%;
+	width:30px;
+	height:40px;
+	opacity:0.2;
+}
+
+a:hover{
+	opacity:1;
+	transition:0.5s;
+}
+
+.select{
+	margin-left:15%;
+}
+
+				/*checkbox*/
+				
+.checkbox{
+    margin-right: 15%;
+}
+
+.checkbox div{
+	float: right;
+	clear: both;
+}
+
+.niceCheck{
+	width:17px;
+	height:17px;
+	display:inline-block;
+	cursor:pointer;
+	background: url(../img/checkboxSprite.png);
+	overflow:hidden;
+	margin: 5px 0 0 5px;
+	
+}
+
+.niceChecked{
+	background-position: 0 -17px;
+}
+
+
+ .niceCheck input,
+ .checkbox input{
+	display:none;
+}
