@@ -1,6 +1,6 @@
-	'use strict';
-	
-var QBase = {
+'use strict'
+
+var QBase= {
 	question: [
 		{
 			q:"Право использования коммерческого наименования 'JavaScript' принадлежит компании:",
@@ -22,7 +22,7 @@ var QBase = {
 			]
 		} ,
 		{
-			q:"Аналог языка JavaScript, разработанный компаний Microsoft?",
+			q:"Аналог языка JavaScript, разработанный компаниeй Microsoft?",
 			a:[ 
 				{option:"JScript",flag:true},
 				{option:"Microsoft .NET",flag:false},
@@ -32,4 +32,6 @@ var QBase = {
 			]
 		}
 	]
-}
+};
+
+
