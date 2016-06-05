@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<meta charset = "UTF-8">
+		<link rel = "stylesheet" href = "css/style.css">
+		<!-- <script type = "text/javascript" src="http://code.jquery.com/jquery-1.12.0.min.js"></script> -->
+		<script data-main = "js/script" src = "js/require.js"></script>
+		<script src = "https://use.fontawesome.com/9c544274fb.js"></script>
+<!--	<script src = "js/tmpl.js"></script>
+ 		<script src = "js/model.js"></script>
+		<script src = "js/view.js"></script>
+		<script src = "js/controller.js"></script> -->
+		<title>ToDo List</title>
+	</head>
+	<body>
+		<script type = "text/template" id = "wrapper--template">
+		<div class = "wrapper">
+			<h1>ToDo-List</h1>
+			<ul class = "todolist"></ul>
+			<input type = "text" class = "todolist__enter" placeholder = "Add your action...">
+			<div class = "controls">
+				<button class = "todolist__add">ADD</button>
+				<button class = "todolist__remove">REMOVE ALL</button>
+			</div>
+		</div>
+		</script>
+		<script type = "text/template" id = "list--template">
+			<% for(var i=0; i<data.length; i++){ %>
+					<li>
+						<%= data[i] %> <span data-value = "<%= data[i] %>" class = "todolist__delete"><img src = "img/trash.png"></span>
+					</li>
+			<% }; %>
+		
+		</script>
+	</body>
+</html>

@@ -1,0 +1,77 @@
+.wrapper{
+	width:40%;
+	height: 1000px;
+	margin:4% auto;
+	background: url(../img/pic.jpg);
+	background-size:cover;
+	padding: 4% 2% 3% 18%;
+	font-size:24px;
+	line-height:40px;
+	position:relative;
+	font-style:italic;
+	font-family:Courier New;
+}
+
+h1{
+	text-align:center;
+	font-size:48px;
+	font-weight:bold;
+	text-decoration:underline;
+}
+
+.todolist{
+	font-family:"Comic Sans MS";
+}
+
+.todolist__enter{
+	padding-left:5px;
+	height:20px;
+	width: 60%;
+    margin-left: 10%;
+	font-style:italic;
+}
+
+.todolist__delete{
+	cursor:pointer;
+	position:absolute;
+	right: 15%;
+}
+
+.todolist__delete img{
+	height:25px;
+	padding-top: 10px;
+}
+
+.controls{
+    margin-left: 15%;
+	
+}
+
+.controls button{
+	font-style:italic;
+	width:30%;
+	color: white;
+    border-radius: 4px;
+	opacity:0.8;
+	height:30px;
+}
+
+.todolist__add{
+	background: rgb(28, 184, 65);
+}
+
+.todolist__remove{
+	background: rgb(202, 60, 60);
+}
+
+.todolist__add:hover{
+	background: rgb(28, 184, 65);
+	opacity:1;
+}
+
+.todolist__remove:hover{
+	background: rgb(202, 60, 60);
+	opacity:1;
+}
+
+
